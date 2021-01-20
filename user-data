@@ -1,0 +1,17 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: e2c-ub
+    username: e2c
+    password: "$6$exDY1mhS4KUYCE/2$zmn9ToZwTKLhCw.b4/b.ZRTIZM30JZ4QrOQ2aOXJ8yk96xpcCof0kxKwuX1kqLG/ygbJ1f8wxED22bTL4F46P0"
+  packages:
+    - ubuntu-desktop
+    - remmina
+    - remmina-rdp
+    - libreoffice-l10n-fr
+    - ansible
+  snaps:
+    - zoom-client
+  keyboard: {layout: fr, toggle: null, variant: ''}
+  locale: fr
